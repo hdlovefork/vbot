@@ -29,7 +29,7 @@ class ApiHandler
     {
         $request = explode("\r\n\r\n", $request);
 
-        if (count($request)<=1 || !$request[1]) {
+        if (!$request[1]) {
             return false;
         }
 
